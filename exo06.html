@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice6</title>
+</head>
+<body>
+    <script>
+        let montantHt = prompt("Merci d'écrire le montent HT");
+        let montantTva = prompt("Merci de renseigner un taux de TVA \nexemple: pour un taux de 20%, écrire 1.2");
+        let total = montantHt*montantTva;
+        if(total > 100) {
+            document.body.innerHTML = '<h1 style="color: red;">' + total + '</h1>';
+            } 
+        else {
+            document.body.innerHTML = '<h1 style="color: green;">' + total + '</h1>';
+            }
+    </script>
+</body>
+</html>
