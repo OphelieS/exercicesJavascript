@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice15</title>
+</head>
+<body>
+    <script>
+        let mot = prompt("Veuillez renseigner un mot de votre choix");
+        let lignes = prompt("Veuillez renseigner le nombre de lignes");
+        let colonnes = prompt("Veuillez renseigner le nombre de colonnes");
+        let tableau = '<table>';
+
+        for(let X = 1;X <= lignes;X++) {
+            tableau = tableau + '<tr>';
+        for(let Y = 1;Y <= colonnes;Y++) {
+            tableau = tableau + '<td>test</td>';
+            }
+            tableau = tableau + '</tr>';
+            }
+            tableau = tableau + '</table>';
+            document.body.innerHTML = tableau;
+    </script>
+</body>
+</html>

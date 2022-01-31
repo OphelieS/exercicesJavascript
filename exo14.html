@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice14</title>
+    <h1>Je n'ai jamais réussi à afficher les lignes du tableau</h1>
+</head>
+<body>
+    
+    <script>
+        let tableau = '<table>';
+        let lignes = 10;
+        let colonnes = 10;
+
+        for(let X = 1;X <= lignes;X++) {
+            tableau = tableau + '<tr>';
+        for(let Y = 1;Y <= colonnes;Y++) {
+            tableau = tableau + '<td>test</td>';
+            }
+            tableau = tableau + '</tr>';
+            }
+            tableau = tableau + '</table>';
+            document.body.innerHTML = tableau;
+        
+        
+    </script>
+</body>
+</html>
