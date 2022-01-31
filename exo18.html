@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice18</title>
+</head>
+<body>
+    <script>
+        let liste = '<ul>';
+        let nombre = 10;
+        let nombre10 = 0;
+        for(let i = 0;i < nombre;i++) {
+        let compatage = Math.floor(Math.random() * 11);
+        if(compatage == 10) {
+        nombre10++;
+        }
+        liste = liste + '<li>' + compatage + '</li>';
+        }
+        liste = liste + '</ul>';
+        liste = liste + '<p>Il y a  ' + nombre10 + ' fois le nombre 10 dans la liste de tirage.</p>'
+        document.body.innerHTML = liste;
+    </script>
+</body>
+</html>
